@@ -8,7 +8,7 @@
 1. apache管理下に`/var/www/html/VRC_photo`を配置
 1. bashで`script/thumb.sh`を実行 
 
-### Require
+### Require:
 - apache
 - php
 - imagick
