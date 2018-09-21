@@ -46,19 +46,19 @@
 	</div>
 	<div style="position:fixed;bottom:0;width:100%;height:15%;text-align:center;right-margin:0">
 		<p>
-				<input id="pre" type="button" value="前へ" <?php $prevpage=$page-1;?> onclick="disableMultiple();<?php if($page!=0){print("location.href='/VRC_photo/list.php?page=$prevpage'");}?>" <?php if($page==0){echo 'disabled';}?>>
+				<input id="pre" type="button" value="前へ" <?php $prevpage=$page-1;?> onclick="disableMultiple();<?php if($page!=0){print("location.href='/VRC_photo/index.php?page=$prevpage'");}?>" <?php if($page==0){echo 'disabled';}?>>
 			<?php
 				print("$page");
 				print("/");
 				print("$max");
 			 ?>
-				<input id="nex" type="button" value="次へ" <?php $nextpage=$page+1;?> onclick="disableMultiple();<?php if($page!=$max){ print("location.href='/VRC_photo/list.php?page=$nextpage'");}?>" <?php if($page==$max){echo 'disabled';}?>>
+				<input id="nex" type="button" value="次へ" <?php $nextpage=$page+1;?> onclick="disableMultiple();<?php if($page!=$max){ print("location.href='/VRC_photo/index.php?page=$nextpage'");}?>" <?php if($page==$max){echo 'disabled';}?>>
 		</p>
     <div>
     <?php
       for ($i=0; $i<= $max; $i++){
      ?>
-       <input type="button" <?php if($page==$i){echo 'disabled';}?> value='<?php print("$i")?>' onclick="location.href='/VRC_photo/list.php?page=<?php print("$i");?>'">
+       <input type="button" <?php if($page==$i){echo 'disabled';}?> value='<?php print("$i")?>' onclick="location.href='/VRC_photo/index.php?page=<?php print("$i");?>'">
     <?php
       }
     ?>
