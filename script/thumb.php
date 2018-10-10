@@ -1,5 +1,5 @@
 <?php
-$project='/var/www/html/VRC_photo/';
+$project='/srv/http/RainbowApple/';
 $files=scandir($project.'VRChat');
 foreach($files as $num => $file){
 	if($num<2){
