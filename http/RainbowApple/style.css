@@ -9,10 +9,10 @@ body{
 .lb {
     display: flex;
     position: fixed;
-    width: 200%;
+    width: 500%;
     height: 100%;
     top: 0;
-    left: -50%;
+    left: -200%;
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,.7);
