@@ -6,7 +6,7 @@ foreach($files as $num => $file){
 		continue;
 	}
 	if(file_exists($project.'thumb/'.substr($file, 0, -4).'.png')){
-		echo "thumbファイルが存在します ".$file."\n";
+		echo "thumb file is already exists ".$file."\n";
 	}else{
 		echo 'convert thumb '.$file."\n";
 		//元画像のパス
@@ -22,7 +22,7 @@ foreach($files as $num => $file){
 	}
 
 	if(file_exists($project.'low/'.substr($file, 0, -4).'.png')){
-		echo "lowファイルが存在します ".$file."\n";
+		echo "low file is already exists ".$file."\n";
 		continue;
 	}else{
 		echo 'convert low '.$file."\n";
