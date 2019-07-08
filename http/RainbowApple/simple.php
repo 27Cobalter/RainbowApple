@@ -3,10 +3,12 @@
   if(isset($_GET['num'])){
     $num = $_GET['num'];
     if(count($files)-3 < $num){
-      header("Location: ./static/dummy.png");
+      // header("Location: ./static/dummy.png");
+      http_response_code(404);
       return;
     }else if($num < 0){
-      header("Location: ./static/dummy.png");
+      // header("Location: ./static/dummy.png");
+      http_response_code(404);
       return;
     }
   }else{
