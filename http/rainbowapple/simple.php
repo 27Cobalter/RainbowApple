@@ -1,5 +1,5 @@
 <?php
-  $files = scandir("./Simple/Low");
+  $files = scandir("./simple/Low");
   if(isset($_GET['num'])){
     $num = $_GET['num'];
     if(count($files)-3 < $num){
@@ -24,6 +24,6 @@
       $qt = 0;
     }
   }
-  $tag = ["Simple/Low", "Simple/Mid", "Simple/High"];
+  $tag = ["simple/Low", "simple/Mid", "simple/High"];
   header("Location: ./".$tag[$qt]."/".$files[$num+2]);
 ?>

@@ -16,7 +16,7 @@
 		}else{
 			$low = false;
 		}
-		$files = scandir("./VRChat");
+		$files = scandir("./vrchat");
 		$max=floor((count($files)-3)/12);
 		if($page < 0){
 			$page=0;
@@ -40,7 +40,7 @@
 				<p style="float:left;margin-right:2%;width:23%">
 					<a id="<?php $co=4*$i+$j;echo $co ?>" href="#<?php print("$files[$num]")?>" width="100%" onclick="disableMultiple()"><img src="
 <?php $thumb="./thumb/".substr($files[$num], 0, -4).".png";if(file_exists($thumb)){echo $thumb;}else{echo "./static/thumb.png";}?>" width="100%"></a><?php print(substr("$files[$num]",17,16));?>
-					<a id="<?php print("$files[$num]")?>" href="#close" class="lb" onclick="disableMultiple()"><img src="./<?php if($low && file_exists("low/".substr($files[$num], 0, -4)."png")){print("low/".substr($files[$num], 0, -4));}else{print("VRChat/$files[$num]");}?>" width="100%"></a>
+					<a id="<?php print("$files[$num]")?>" href="#close" class="lb" onclick="disableMultiple()"><img src="./<?php if($low && file_exists("low/".substr($files[$num], 0, -4)."png")){print("low/".substr($files[$num], 0, -4));}else{print("vrchat/$files[$num]");}?>" width="100%"></a>
 				</p>
 			<?php
 			}
