@@ -25,5 +25,5 @@
     }
   }
   $tag = ["Simple/Low", "Simple/Mid", "Simple/High"];
-  header("Location: ./".$tag[$qt]."/".$files[count($files)-$num-1]);
+  header("Location: ./".$tag[$qt]."/".$files[$num+2]);
 ?>
