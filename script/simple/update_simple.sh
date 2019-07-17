@@ -1,9 +1,10 @@
 #!/bin/bash
 
 date > /tmp/debug.log
-mkdir /tmp/simple.lock > /dev/null 2>&1
 echo "1" >> /tmp/debug.log
+mkdir /tmp/simple.lock > /dev/null 2>&1
 if [ $? -ne 0 ]; then
+  echo "lock file is exists"
   echo "2" >> /tmp/debug.log
   exit 1
 fi

@@ -3,8 +3,8 @@ $project='../';
 $files=scandir($project.'src', 1);
 
 foreach($files as $num => $file){
-  if($file == ".."){
-  	return;
+  if(substr($file, 0, 1) == "."){
+    continue;
   }
   //元画像のパス
   $srcImagePath = $project.'src/'.$file;
